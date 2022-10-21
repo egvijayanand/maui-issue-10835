@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="MauiApp1.DesktopPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp1">
+    <ContentPage.Content>
+        <Grid>
+            <Editor Text="This is my editor text.">
+                <FlyoutBase.ContextFlyout>
+                    <MenuFlyout>
+                        <MenuFlyoutItem Text="Bold" />
+                        <MenuFlyoutItem Text="Italic" />
+                        <MenuFlyoutItem Text="Underline" />
+                        <MenuFlyoutSubItem Text="Highlight">
+                            <MenuFlyoutItem Text="Yellow" />
+                        </MenuFlyoutSubItem>
+                    </MenuFlyout>
+                </FlyoutBase.ContextFlyout>
+            </Editor>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
